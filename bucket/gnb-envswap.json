@@ -4,12 +4,20 @@
   "description": "A CLI tool with a TUI to quickly and safely switch environment variables in a PowerShell session.",
   "homepage": "https://github.com/gennobou/gnb-envswap",
   "license": "MIT",
-  "url": "https://github.com/GennoBou/gnb-envswap/releases/download/v0.3.0/gnb-envswap-v0.3.0.zip",
-  "hash": "0a787c69429c33d4ace4b7214560c91d50413cc98b572dfa7db7dbfa6b621e92",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/GennoBou/gnb-envswap/releases/download/v0.3.0/gnb-envswap-v0.3.0.zip",
+      "hash": "a00b56179f023a7f2cacbc9ca4ccdf4a8ec726ad7e05866a68cc9ada0bc43336"
+    }
+  },
   "bin": "gnb-envswap.exe",
   "checkver": "github",
   "autoupdate": {
-    "url": "https://github.com/GennoBou/gnb-envswap/releases/download/v0.3.0/gnb-envswap-v0.3.0.zip"
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/GennoBou/gnb-envswap/releases/download/v0.3.0/gnb-envswap-v0.3.0.zip"
+      }
+    }
   },
   "post_install": [
     "$profile = $PROFILE",
